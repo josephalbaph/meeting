@@ -1,0 +1,62 @@
+{
+ "creation": "2020-05-12 01:36:24.732813",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "more_information_section",
+  "status",
+  "column_break_4",
+  "assigned_to",
+  "complete_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "complete_by",
+   "fieldtype": "Date",
+   "label": "Complete By"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-12 01:52:21.921829",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting Minute",
+ "nsm_parent_field": "parent_meeting_minute",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
