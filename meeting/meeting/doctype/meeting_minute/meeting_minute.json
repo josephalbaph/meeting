@@ -9,7 +9,8 @@
   "status",
   "column_break_4",
   "assigned_to",
-  "complete_by"
+  "complete_by",
+  "todo"
  ],
  "fields": [
   {
@@ -45,10 +46,18 @@
    "fieldname": "complete_by",
    "fieldtype": "Date",
    "label": "Complete By"
+  },
+  {
+   "fieldname": "todo",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ToDo",
+   "options": "ToDo",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-12 01:52:21.921829",
+ "modified": "2020-05-13 01:59:59.347634",
  "modified_by": "Administrator",
  "module": "Meeting",
  "name": "Meeting Minute",

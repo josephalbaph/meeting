@@ -1,5 +1,5 @@
 {
- "autoname": "Meeting-.x",
+ "autoname": "MEET.#",
  "creation": "2020-05-12 00:12:41.813306",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -7,6 +7,9 @@
  "field_order": [
   "title",
   "status",
+  "show_in_website",
+  "page_name",
+  "parent_website_route",
   "column_break_3",
   "date",
   "from_time",
@@ -114,9 +117,30 @@
    "fieldname": "send_emails",
    "fieldtype": "Button",
    "label": "Send Emails"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_in_website",
+   "fieldtype": "Check",
+   "label": "Show in Website"
+  },
+  {
+   "fieldname": "page_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Page Name",
+   "read_only": 1
+  },
+  {
+   "default": "meetings",
+   "fieldname": "parent_website_route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Website Route",
+   "read_only": 1
   }
  ],
- "modified": "2020-05-12 20:30:18.301524",
+ "modified": "2020-05-13 02:42:30.130856",
  "modified_by": "Administrator",
  "module": "Meeting",
  "name": "Meeting",
@@ -147,7 +171,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "title",
